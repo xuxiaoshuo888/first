@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,scalable=no">
+    <title>7不同意学生退房页面</title>
+    <link rel="stylesheet" href="./css/weui.min.css">
+    <link rel="stylesheet" href="./css/jquery-weui.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div id="app" class="full-screen">
+    <div class="person">
+        <img src="./images/student.png" alt="" class="person-img">
+        <div class="person-n">
+            <div class="person-name">张三</div>
+            <div class="person-xh">20203938212</div>
+        </div>
+    </div>
+    <div class="person-info">
+        <div class="info-item blue">北苑-1栋-405 北苑-1栋-405 北苑-1栋-405
+        </div>
+    </div>
+    <div class="person-info">
+        <div class="info-item red">2020级</div>
+        <div class="info-item yellow">信息与科技技术学院</div>
+    </div>
+    <div class="content-contain top">
+        <div class="list">
+            <div class="list-item">
+                <div class="list-item-xh">2020120120</div>
+                <div class="list-item-status"><img src="./images/unchoose.png" alt="">已退宿</div>
+                <div class="list-item-xm">
+                    张三张
+                    <img src="./images/arrow-dis.png" class="list-item-arrow" alt="">
+                </div>
+            </div>
+            <div class="list-item reject-info">
+                <img src="./images/error.png" alt="" class="reject-info-img">当前页面为不同意该学生退房填写
+            </div>
+        </div>
+
+        <div class="result-title">备注</div>
+        <div class="weui-cells weui-cells_form beizhu">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" value="座椅损坏，门窗损坏" disabled placeholder="请输入不同意退房原因" rows="6">座椅损坏，门窗损坏</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-title">请上传照片</div>
+        <div class="weui-uploader">
+            <div class="weui-uploader__hd">
+            </div>
+            <div class="weui-uploader__bd">
+                <ul class="weui-uploader__files" id="uploaderFiles">
+                    <li class="weui-uploader__file" style="background-image:url(./images/pic_160.png)">
+                        <img src="./images/delete.png" class="delete-btn" />
+                    </li>
+                    <!--<li class="weui-uploader__file weui-uploader__file_status"-->
+                    <!--style="background-image:url(./images/pic_160.png)">-->
+                    <!--<div class="weui-uploader__file-content">-->
+                    <!--<i class="weui-icon-warn"></i>-->
+                    <!--</div>-->
+                    <!--</li>-->
+                    <!--<li class="weui-uploader__file weui-uploader__file_status"-->
+                    <!--style="background-image:url(./images/pic_160.png)">-->
+                    <!--<div class="weui-uploader__file-content">50%</div>-->
+                    <!--</li>-->
+                </ul>
+                <div class="weui-uploader__input-box myupload">
+                    <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+                </div>
+            </div>
+        </div>
+        <div class="btn-div">
+            <button type="pup-full" class="pup-button">不同意退房</button>
+            <button type="pup-plain" class="pup-button">同意退房</button>
+        </div>
+    </div>
+</div>
+<script src="./js/jquery-2.1.4.js"></script>
+<script src="./js/jquery-weui.min.js"></script>
+</body>
+</html>

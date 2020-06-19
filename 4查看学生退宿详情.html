@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,scalable=no">
+    <title>4查看学生退宿详情</title>
+    <link rel="stylesheet" href="./css/weui.min.css">
+    <link rel="stylesheet" href="./css/jquery-weui.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div id="app" class="full-screen">
+    <div class="person">
+        <img src="./images/student.png" alt="" class="person-img">
+        <div class="person-n">
+            <div class="person-name">张三</div>
+            <div class="person-xh">20203938212</div>
+        </div>
+    </div>
+    <div class="person-info">
+        <div class="info-item blue">北苑-1栋-405 北苑-1栋-405 北苑-1栋-405
+        </div>
+    </div>
+    <div class="person-info">
+        <div class="info-item red">2020级</div>
+        <div class="info-item yellow">信息与科技技术学院</div>
+    </div>
+    <div class="content-contain top">
+        <div class="list">
+            <div class="list-item">
+                <div class="list-item-xh">2020120120</div>
+                <div class="list-item-status yts">已退宿</div>
+                <div class="list-item-xm">
+                    张三张
+                    <img src="./images/arrow-dis.png" class="list-item-arrow" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="result-title">请选择退房原因</div>
+        <div class="weui-cells weui-cells_radio">
+            <label class="weui-cell weui-check__label" for="x11">
+                <div class="weui-cell__bd">
+                    <p>毕业</p>
+                </div>
+                <div class="weui-cell__ft">
+                    <input type="radio" class="weui-check" name="radio1" id="x11">
+                    <span class="weui-icon-checked"></span>
+                </div>
+            </label>
+            <label class="weui-cell weui-check__label" for="x12">
+                <div class="weui-cell__bd">
+                    <p>退学</p>
+                </div>
+                <div class="weui-cell__ft">
+                    <input type="radio" name="radio1" class="weui-check" id="x12" checked="checked">
+                    <span class="weui-icon-checked"></span>
+                </div>
+            </label>
+            <label class="weui-cell weui-check__label" for="x13">
+                <div class="weui-cell__bd">
+                    <p>外宿</p>
+                </div>
+                <div class="weui-cell__ft">
+                    <input type="radio" name="radio1" class="weui-check" id="x13" checked="checked">
+                    <span class="weui-icon-checked"></span>
+                </div>
+            </label>
+            <label class="weui-cell weui-check__label" for="x14">
+                <div class="weui-cell__bd">
+                    <p>休学</p>
+                </div>
+                <div class="weui-cell__ft">
+                    <input type="radio" name="radio1" class="weui-check" id="x14" checked="checked">
+                    <span class="weui-icon-checked"></span>
+                </div>
+            </label>
+            <label class="weui-cell weui-check__label" for="x15">
+                <div class="weui-cell__bd">
+                    <p>换寝</p>
+                </div>
+                <div class="weui-cell__ft">
+                    <input type="radio" name="radio1" class="weui-check" id="x15" checked="checked">
+                    <span class="weui-icon-checked"></span>
+                </div>
+            </label>
+        </div>
+
+        <div class="result-title">备注</div>
+        <div class="weui-cells weui-cells_form beizhu">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请输入不同意退房原因" rows="6"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-title">请上传照片</div>
+        <div class="weui-uploader">
+            <div class="weui-uploader__hd">
+            </div>
+            <div class="weui-uploader__bd">
+                <ul class="weui-uploader__files" id="uploaderFiles">
+                    <li class="weui-uploader__file" style="background-image:url(./images/pic_160.png)">
+                        <img src="./images/delete.png" class="delete-btn" />
+                    </li>
+                    <!--<li class="weui-uploader__file weui-uploader__file_status"-->
+                        <!--style="background-image:url(./images/pic_160.png)">-->
+                        <!--<div class="weui-uploader__file-content">-->
+                            <!--<i class="weui-icon-warn"></i>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li class="weui-uploader__file weui-uploader__file_status"-->
+                        <!--style="background-image:url(./images/pic_160.png)">-->
+                        <!--<div class="weui-uploader__file-content">50%</div>-->
+                    <!--</li>-->
+                </ul>
+                <div class="weui-uploader__input-box myupload">
+                    <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+                </div>
+            </div>
+        </div>
+        <div class="btn-div">
+            <button type="pup-full" class="pup-button">不同意退房</button>
+            <button type="pup-plain" class="pup-button">同意退房</button>
+        </div>
+    </div>
+</div>
+<script src="./js/jquery-2.1.4.js"></script>
+<script src="./js/jquery-weui.min.js"></script>
+</body>
+</html>

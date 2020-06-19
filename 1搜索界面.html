@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,scalable=no">
+    <title>1搜索界面</title>
+    <link rel="stylesheet" href="./css/weui.min.css">
+    <link rel="stylesheet" href="./css/jquery-weui.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/vant-ui.css">
+</head>
+<body>
+<div id="app" class="full-screen">
+    <div class="search-condition">
+        <div class="search-condition-item all">
+            全部<br />范围
+        </div>
+        <div class="search-condition-item text-scroll pdr text-c" @click="show=true">
+            东校区 雅苑 1栋 5楼 403 东校区 雅苑
+            <img src="./images/trani-white.png" alt="">
+        </div>
+    </div>
+    <div class="search-div">
+        <input type="text" placeholder="请输入学号" class="search-div-input"/>
+        <button type="" class="search-div-btn" @click="">
+            <img src="./images/search.png" alt="">
+        </button>
+    </div>
+    <div class="bg">
+        <img src="./images/bg-calendar.png" alt="" class="bg-img">
+    </div>
+
+    <van-dialog v-model="show" class="my-dialog">
+        <!--<img src="https://img.yzcdn.cn/vant/apple-3.jpg" />-->
+        <div slot="title">
+            <div class="my-dialog-title">
+                筛选条件
+                <div class="my-dialog-title-clear-btn">清除全部</div>
+            </div>
+        </div>
+        <div slot="default">
+            <div class="select-div">
+                <div class="select-column-div select-bg4">
+                    <div class="select-column-item active">全部</div>
+                    <div class="select-column-item" v-for="i in 20">东校区</div>
+                </div>
+                <div class="select-column-div select-bg3">
+                    <div class="select-column-item active">全部</div>
+                    <div class="select-column-item" v-for="i in 20">东校区</div>
+                </div>
+                <div class="select-column-div select-bg2">
+                    <div class="select-column-item active">全部</div>
+                    <div class="select-column-item" v-for="i in 20">东校区</div>
+                </div>
+                <div class="select-column-div select-bg1">
+                    <div class="select-column-item active">全部</div>
+                    <div class="select-column-item" v-for="i in 20">东校区</div>
+                </div>
+            </div>
+        </div>
+    </van-dialog>
+</div>
+<script src="./js/jquery-2.1.4.js"></script>
+<script src="./js/jquery-weui.min.js"></script>
+<script src="./js/vue.js"></script>
+<script src="./js/vant.min.js"></script>
+<script type="text/javascript">
+  var app = new Vue({
+    el: '#app',
+    data: {
+      show: false,
+    }
+  })
+</script>
+</body>
+</html>

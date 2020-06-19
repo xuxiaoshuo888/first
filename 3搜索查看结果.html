@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,scalable=no">
+    <title>3搜索查看结果</title>
+    <link rel="stylesheet" href="./css/weui.min.css">
+    <link rel="stylesheet" href="./css/jquery-weui.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div id="app" class="full-screen">
+    <div class="search-condition">
+        <div class="search-condition-item all">
+            全部<br />范围
+        </div>
+        <div class="search-condition-item text-scroll pdr text-c" @click="show=true">
+            东校区 雅苑 1栋 5楼 403 东校区 雅苑
+            <img src="./images/trani-white.png" alt="">
+        </div>
+    </div>
+    <div class="search-div">
+        <input type="text"  placeholder="请输入学号" class="search-div-input" />
+        <button type="" class="search-div-btn">
+            <img src="./images/search.png" alt="">
+        </button>
+    </div>
+    <div class="content-contain top">
+        <div class="list">
+            <div class="list-item">
+                <div class="list-item-xh">2020120120</div>
+                <div class="list-item-status wts">未退宿</div>
+                <div class="list-item-xm">
+                    张三张
+                    <img src="./images/arrow-dis.png" class="list-item-arrow" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="btn-div fix-bottom">
+            <button type="pup-full" class="pup-button">确认</button>
+        </div>
+    </div>
+</div>
+<script src="./js/jquery-2.1.4.js"></script>
+<script src="./js/jquery-weui.min.js"></script>
+</body>
+</html>
